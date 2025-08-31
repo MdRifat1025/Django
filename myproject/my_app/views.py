@@ -11,3 +11,9 @@ def signin(request):
 
 def Signup(request):
     return render(request,"signup.html")
+
+def about(request):
+    return render(request,"about.html")
+
+def category(request):
+    return render(request,"category.html")

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us - E-commerce Company</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .owner-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #007bff;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header / Navbar (optional) -->
+{% include "header.html" %}
+
+<!-- About Section -->
+<div class="container py-5">
+  <div class="row mb-5">
+    <div class="col-lg-6">
+      <h2>About Our Company</h2>
+      <p>We are <strong>MyEcom</strong>, a leading e-commerce platform dedicated to providing top-quality products at the best prices. Our mission is to make online shopping easy, secure, and enjoyable for everyone. We pride ourselves on excellent customer service and a seamless shopping experience.</p>
+      <p>Founded in 2020, our company has quickly grown to serve thousands of happy customers worldwide. We believe in innovation, integrity, and building strong relationships with our clients and partners.</p>
+    </div>
+    <div class="col-lg-6">
+      <img src="https://via.placeholder.com/500x300" class="img-fluid rounded" alt="Company Image">
+    </div>
+  </div>
+
+  <!-- Owner Profile -->
+  <div class="row align-items-center">
+    <div class="col-md-3 text-center">
+      <img src="https://via.placeholder.com/150" alt="Owner" class="owner-img mb-3">
+      <h5>John Doe</h5>
+      <p class="text-muted">Founder & CEO</p>
+    </div>
+    <div class="col-md-9">
+      <p>John Doe is an experienced entrepreneur with over 10 years in the e-commerce and technology industry. His vision is to make online shopping more accessible and enjoyable for everyone. Under his leadership, MyEcom has become a trusted brand known for quality, reliability, and customer satisfaction.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
