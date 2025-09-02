@@ -3,12 +3,13 @@ from authenticate.models import Author
 from django.contrib.auth.hashers import make_password
 from django.contrib import messages
 from django.contrib.auth.hashers import check_password
-
+from product.models  import Product
 def home(request):
     return render(request,"header.html")
 
 def Products(request):
-    return render(request,"Products.html")
+    products = Product.objects.all()
+    return render(request,"Products.html", {"products": products})
 
 def signin(request):
     if request.method == "POST":

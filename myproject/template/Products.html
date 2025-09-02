@@ -14,22 +14,25 @@
   <h2 class="mb-4 text-center">Products</h2>
 
   <div class="row row-cols-1 row-cols-md-4 g-4">
+    {% for i in products%}
     <!-- Example Card with Image and Price -->
     <div class="col">
       <div class="card shadow-sm h-100">
-        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 1">
+        <img src="{{i.img.url }}" class="card-img-top" alt="Product 1">
         <div class="card-body">
-          <h5 class="card-title">Card 1</h5>
-          <p class="card-text">This is some sample text inside Card 1.</p>
-          <p class="card-text fw-bold">$25.00</p>
+          <h5 class="card-title">{{i.title}}</h5>
+          <p class="card-text">{{i.description}}</p>
+          <p class="card-text fw-bold">{{i.price}}</p>
           <a href="#" class="btn btn-primary">Read More</a>
+
         </div>
       </div>
+      {%endfor%}
     </div>
 
     <div class="col">
       <div class="card shadow-sm h-100">
-        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 2">
+        <img src="/static/img/IMG_Comfort_SP_5100_Manual_Front.webp" class="card-img-top" alt="Product 2">
         <div class="card-body">
           <h5 class="card-title">Card 2</h5>
           <p class="card-text">This is some sample text inside Card 2.</p>
@@ -42,7 +45,7 @@
     <!-- Similarly duplicate for remaining cards -->
     <div class="col">
       <div class="card shadow-sm h-100">
-        <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 3">
+        <img src="/static/img/elegant-armchair-coffee-table-set-modern-comfort-style_191095-80516.avif" class="card-img-top" alt="Product 3">
         <div class="card-body">
           <h5 class="card-title">Card 3</h5>
           <p class="card-text">This is some sample text inside Card 3.</p>
